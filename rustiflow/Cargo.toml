@@ -39,6 +39,9 @@ tui = "0.19"
 strum = "0.26.3"
 strum_macros = "0.26.4"
 
+[lib]
+path = "src/lib.rs"
+
 [[bin]]
 name = "rustiflow"
 path = "src/main.rs"

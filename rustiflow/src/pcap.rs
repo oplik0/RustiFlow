@@ -1,6 +1,6 @@
 use std::hash::{DefaultHasher, Hash, Hasher};
 
-use crate::Flow;
+use crate::flows::flow::Flow;
 use crate::{flow_table::FlowTable, packet_features::PacketFeatures};
 use chrono::{DateTime, Utc};
 use log::{debug, error};

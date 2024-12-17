@@ -1,6 +1,5 @@
 use std::hash::{DefaultHasher, Hash, Hasher};
 
-use crate::debug;
 use crate::{flow_table::FlowTable, flows::flow::Flow, packet_features::PacketFeatures};
 use aya::maps::PerCpuValues;
 use aya::{
@@ -11,7 +10,7 @@ use aya::{
 };
 use aya_log::EbpfLogger;
 use common::{EbpfEventIpv4, EbpfEventIpv6};
-use log::{error, info};
+use log::{debug, error, info};
 use tokio::{
     io::unix::AsyncFd,
     signal,

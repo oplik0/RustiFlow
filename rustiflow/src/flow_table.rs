@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-use crate::{packet_features::PacketFeatures, Flow};
+use crate::{packet_features::PacketFeatures, flows::flow::Flow};
 use chrono::{DateTime, TimeDelta, Utc};
 use log::{debug, error};
 use tokio::sync::mpsc;
